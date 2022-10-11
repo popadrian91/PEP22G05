@@ -1,0 +1,5 @@
+b=int(input('Baza: '))
+h=int(input('inaltimea: '))
+a=((b*h)/2)
+print(type(a))
+print(a)

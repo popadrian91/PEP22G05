@@ -26,3 +26,12 @@ print(result)
 result=input('Say Hello: ')
 print(result)
 
+
+#print multiple args
+print('Emanuel', 'Ion', 'Ilie')
+
+#casting
+result = 'abcd'
+result = int(result)
+
+
