@@ -31,7 +31,21 @@ print(result)
 print('Emanuel', 'Ion', 'Ilie')
 
 #casting
-result = 'abcd'
-result = int(result)
+# result = 'abcd'
+# result = int(result)
+
+# Operatii
+
+# comparation
+a = "abcd"
+b = "abcd"
+print(a==b)
+print('ID of a is: ', id(a))
+print('ID of b is:' , id(b))
+print(a is b)
 
 
+
+#slice
+a ="my_text"
+print(a[1])
