@@ -23,8 +23,8 @@ result=print('exemple')
 print(result)
 
 #return of input
-result=input('Say Hello: ')
-print(result)
+#result=input('Say Hello: ')
+#print(result)
 
 
 #print multiple args
@@ -49,3 +49,19 @@ print(a is b)
 #slice
 a ="my_text"
 print(a[1])
+print(a[1:3])
+print(a[1:7])
+print(a[1:])
+print(a[:6])
+print(a[:])
+
+print(a[:6:2]) #ultimul 2 reprezinta pasul
+
+    #-7-6-5-4-3-2-1
+a ='my_text'
+print(a[-1])
+print(a[-6:-1])
+print(a[-1:-6:-1]) #la pas negativ merge de la dreapta la stanga
+
+b = 'This is may reversed text'
+print(b[::-1])

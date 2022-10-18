@@ -1,0 +1,8 @@
+a=input('Sir de caractere: ')
+#my_str=a.format(len(a))
+y=len(a)
+#print('Lungimea sirului este{}',len(a))
+print('Lungimea sirului este:' ,y)
+print(f"Lungimea sirului este:" ,{y})
+print("Lungimea sirului este: {0}".format(y))
+print("lungimea sirului este " + str(y))
