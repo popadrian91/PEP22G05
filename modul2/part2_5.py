@@ -1,3 +1,5 @@
-a=input('Input')
-a_inversat=a[::-1]
-print('Este palindrom: ' ,a==a_inversat)
+
+# aa=a.lower()
+# a_inversat=aa[::-1]
+a=input('Input: ')
+print('Este palindrom: ' ,a.lower()==a.lower()[::-1])

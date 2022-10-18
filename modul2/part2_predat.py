@@ -31,3 +31,9 @@ print(result)
 
 result='abd'.center(7,'#')
 print(result)
+
+##lower and upper
+result=my_str.lower()
+print(result)
+result=my_str.upper()
+print((result))
