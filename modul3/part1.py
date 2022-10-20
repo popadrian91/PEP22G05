@@ -53,3 +53,6 @@
 
 #For loops
 
+a = 'my_string'
+
+for i in a:
