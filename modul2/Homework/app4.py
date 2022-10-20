@@ -1,7 +1,7 @@
-n=input('Introduceti un sir de caractere: ')
-print('Enter dupa fiecare caracter este:\n','\n'.join(n[i:i + 1] for i in range(0, len(n), 1))) #splituire after each character using /n
-print('Enter dupa fiecare caracter este:\n','\n'.join(n[i:i + 3] for i in range(0, len(n), 3))) #splituire after each character using /n
+a='Ananas'
 
-#print('Sirul introdus este: ', n,'\n' 'Sirul inversat este: ', n[::-1]) #print sir si sir inversat
-
-
+print(a[0],a[1],a[2],a[3],a[4],a[5], sep='\n')
+print(a[:3],a[3:], sep='\n')
+print(a[:2],':',a[2:5],':',a[5])
+print(a[:3],'_',a[3:5],'_',a[5])
+print(8*a[1:3])
