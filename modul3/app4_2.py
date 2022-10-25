@@ -1,7 +1,8 @@
 parola=7788
-
-b=range(3)
-for i in b:
+i=0
+#b=range(3)
+while i<3:
+    i +=1
     a = int(input('Introduceti o parola: '))
     if(a==parola):
         print('Acces permis')
