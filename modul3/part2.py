@@ -91,7 +91,28 @@ my_new_list=list('random')
 #     my_new_list.pop()
 #     print(letter)
 
-for letter in my_new_list.copy(): #copy of the list
-    my_new_list.pop()
-    print(letter)
-print(my_new_list)
+# for letter in my_new_list.copy(): #copy of the list
+#     my_new_list.pop()
+#     print(letter)
+# print(my_new_list)
+
+#Dyctionary
+
+empty_dict = {}
+my_dict = {'key1': 'value1', 1: True, 3.14: ['Py']}
+print(my_dict)
+my_dict['1'] = False
+print(my_dict)
+my_dict[1] = False
+print(my_dict)
+
+#Dictionary methods
+result=my_dict.pop(1)
+print(result)
+print(my_dict)
+
+my_dict.update({'key1': 'value3' ,'key2': 'value2'})
+print(my_dict)
+
+for item in my_dict:
+    print(item)
