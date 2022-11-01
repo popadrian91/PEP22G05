@@ -55,32 +55,54 @@
 #
 # robot()
 
-my_tupple = (1,2,3)
-print(my_tupple)
-
-my_tupple = 1,2,3
-print(my_tupple)
-print(type(my_tupple))
-
-a = 5
-b = 3
-a, b =b,a
-print(a,b)
+# my_tupple = (1,2,3)
+# print(my_tupple)
+#
+# my_tupple = 1,2,3
+# print(my_tupple)
+# print(type(my_tupple))
+#
+# a = 5
+# b = 3
+# a, b =b,a
+# print(a,b)
 
 #unpack variables in tuple
 
-a=5
-b=3
-c=7
-d = 11
-a,b,c,d=d,c,b,a
-print(a,b,c,d)
-a,*var,d =d,c,b,a
-print(a,d)
-print(var)
+# a=5
+# b=3
+# c=7
+# d = 11
+# a,b,c,d=d,c,b,a
+# print(a,b,c,d)
+# a,*var,d =d,c,b,a
+# print(a,d)
+# print(var)
+#
+# def test_function(*args, **kwargs):
+#     print('Args',args)
+#     print('KWARGS',kwargs)
+#
+# test_function(1,2,3,{1: 2}, end='\n', next=(123,))
 
-def test_function(*args, **kwargs):
-    print('Args',args)
-    print('KWARGS',kwargs)
+# exceptions
 
-test_function(1,2,3, end='\n', next=(123,))
+#print(1/0)
+
+def div(number1, number2):
+    result='infinit'
+    try:
+        result=number1/number2
+
+    except TypeError:
+        print('not possible for string')
+        return None
+        #result = None
+    except ZeroDivisionError:
+        print('not possible for devide by 0')
+    except:
+        raise
+    return result
+
+print(div(1, 0))
+print(div('1', 0))
