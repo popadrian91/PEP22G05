@@ -30,3 +30,4 @@ if __name__=="__main__":
     # stergere_produs({"produs1": [3.5, 10]})
     adaugare_produs({"produs1": [3.5, 10]})
 
+jssj
