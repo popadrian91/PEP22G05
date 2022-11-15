@@ -14,8 +14,12 @@
 def adaugare_produs(stoc_existent: dict):
     prod=input("Introduceti produs: ")
     caract_produs = prod.split(";")
-    stoc_existent.update({caract_produs[0]: [float(caract_produs[1]), int(caract_produs[2])]})
+    if stoc_existent.get(caract_produs[0],False):
+        stoc_existent.update({caract_produs[0]: [float(caract_produs[1]), stoc_existent[caract_produs[0]][1]+int(caract_produs[2])]})
+    else:
+        stoc_existent.update({caract_produs[0]: [float(caract_produs[1]), int(caract_produs[2])]})
     #return stoc_existent
+
 
 def stergere_produs(stoc_existent: dict):
     produs=input("Ce produs doresti sa stergi: ")
@@ -30,4 +34,3 @@ if __name__=="__main__":
     # stergere_produs({"produs1": [3.5, 10]})
     adaugare_produs({"produs1": [3.5, 10]})
 
-jssj
