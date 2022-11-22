@@ -40,18 +40,19 @@ n%u a&#^ p%t%p b$u!& d# bu&u$i#, uimi$# !i n#in&$#d#$# &a$# mi-a
 #         print(i)
 
 decrypt_key = {
-    "!":"s",
-    "@":"h",
+    "!": "s",
+    "@": "h",
     "#": "e",
-    "$":"r",
-    "^":"l",
-    "%":"o",
-    "&":"c",
-    "*":"k"
+    "$": "r",
+    "^": "l",
+    "%": "o",
+    "&": "c",
+    "*": "k"
 }
 
+
 def decrypt(encrypted_text, decryption_key):
-    resoult=""
+    resoult = ""
     for letter in encrypted_text:
         if letter in decryption_key:
             letter = decryption_key[letter]
@@ -60,7 +61,9 @@ def decrypt(encrypted_text, decryption_key):
             resoult += letter
     return resoult
 
-resoult = decrypt(data,decrypt_key)
+
+resoult = decrypt(data, decrypt_key)
+
 
 def capitalize_sentence(text):
     my_list = []
@@ -71,6 +74,49 @@ def capitalize_sentence(text):
 
     return ".".join(my_list)
 
-capitalize_sentence(resoult)
+
+new_resoult = capitalize_sentence(resoult)
 print(new_resoult)
+
+
 ####
+
+
+#
+# list=data.split()
+# print(list)
+#
+# for i in list:
+#     if i <= 5:
+#         print(i)
+#     elif 5<i<=8:
+#         print(i)
+#     elif i>8:
+#         print(i)
+
+def count_letters(text):
+    # list=data.split(" ")
+    # print(list)
+    short = []
+    medium = []
+    long = []
+    for word in text.split():
+        # word=word.strip('.;, ')
+        word = word.strip(',.;: ')  # type:str
+        # print(len(word))
+        if len(word) <= 5:
+            short.append(word)
+        elif 5 < len(word) <= 8:
+            medium.append(word)
+        elif len(word) > 8:
+            long.append(word)
+    # print(f"Cuvinte scurte: {short}")
+    # print(f"Cuvinte medii: {medium}")
+    # print(f"Cuvinte lungi: {long}")
+    return short, medium, long
+
+
+resoult = count_letters(new_resoult)
+print(f"Short words: {resoult[0]}")
+print(f"Medium words: {resoult[1]}")
+print(f"Long words: {resoult[2]}")
