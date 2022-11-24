@@ -4,12 +4,14 @@ class Car:
     color = 'yellow'
     motors = ["fw-2KW-engine"]
     lights = 'off'
-    def __init__(self, color= 'red'):
+    #name = 'Masina'
+    def __init__(self,name = 'Dacia', color= 'red'):
         #print(self.color)
         #wheels = 4 # this is local to __init__
         self.wheels = 4
         self.construction_date = time.time()
         self.color = color
+        self.name = name
 
     def start_car(self):
         print('Brum.....brum')
@@ -29,6 +31,10 @@ class Car:
         else:
             return False
 
+    def __str__(self):
+        f= ''
+        f = f"name = {self.name} date={self.construction_date} color = {self.color}"
+        return f
 
 # car = Car('green')
 # print(type(car))
@@ -79,3 +85,5 @@ car1.wheels = 5
 car2 = Car()
 print(car1 == car2)
 
+car1= Car('Dacia')
+print(str(car1))
