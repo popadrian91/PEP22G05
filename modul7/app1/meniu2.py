@@ -45,7 +45,7 @@ def meniu():
             if optiune == "2":
                 meniu[optiune](produse)
             if optiune == "1":
-                meniu[optiune]
+                meniu[optiune]()
         except KeyError:
             print("Incorrect value! try again... ")
 
